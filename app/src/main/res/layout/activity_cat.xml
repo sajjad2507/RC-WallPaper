@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatActivity">
+
+    <TextView
+        android:id="@+id/wallpaper_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/bold"
+        android:text=""
+        android:textColor="@color/wallpaperPrimary"
+        android:textSize="39sp" />
+
+    <TextView
+        android:id="@+id/wallpaper_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallpaper_name"
+        android:layout_marginStart="20sp"
+        android:fontFamily="@font/regular"
+        android:text=""
+        android:textColor="@color/wallpaperPrimary"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wallpaper_rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallpaper_count" />
+
+</RelativeLayout>
